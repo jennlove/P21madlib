@@ -1,35 +1,54 @@
 #Version test edit
-print ('Test edit')
-print ("It Could Have Happened That Way, Birth)'\n")
+import string
+def noun():
+    return input("Enter a noun: ")
 
-def get_word(part_of_speech):
-    if (part_of_speech == 'noun'):
-        return input("Enter a noun: ")
-    elif (part_of_speech == 'verb'):
-        return input("Enter a verb: ")
-    elif (part_of_speech == 'ing_verb'):
-        return input("Enter a verb (ing form): ")
-    elif (part_of_speech == 'adj'):
-        return input("Enter an adjective: ")
-    elif (part_of_speech == 'name'):
-        return input("Enter a person's name: ")
-    elif (part_of_speech == 'day'):
-        return input("Enter a day: ")
+def plnoun():
+    return input("Enter a plural noun: ")
 
-print("I remember when Patrick was born like it was " + get_word('day') + \
-      ". It was still number days before he was due but I was READY.  "
-      "I weighed number pounds and looked like I'd swallowed a noun \
-      Bruce was ready, too.  He'd had enough of my verbing all the time and "
-      "verbing nouns and was tired of running out to store at a moment's notice to "
-      "buy 'Food'.  So, I was verbing on the noun and then decided to go to the
-      'room'.
+def verb():
+    return input("Enter a present tense verb: ")
 
-      him to run out to Store to get me Pnoun.
-      I felt "adj and was just lying on the noun"
-      "I was lying on the noun looking like a noun \
-      with a belly the size of a noun.   Exclamation, I said as I started to feel
-      the first adjective contraction.  I think today's the day.  '
-      "We had just finished " + get_word('adj') + \
-      " and Dad was ing_verb the noun. \
-      " I It's " + get_word('name') + ". "
-      "You'd better not " + get_word('verb') + "!")
+def verbing():
+    return input("Enter an 'ing' verb: ")
+
+def verbed():
+    return input("Enter an 'ed' verb: ")
+
+def adj():
+    return input("Enter an adjective: ")
+
+def name():
+    return string.capwords(input("Enter a famous person\'s name: "))
+
+def number():
+    return str(input("Enter a number: "))
+
+def adverb():
+    return input("Enter an adverb: ")
+
+def place():
+    return input("Enter a city/town: ")
+
+story =("March 7, in the year " + number() + ": It was still " + number() + " days before Patrick was \n"
+    "due. I weighed about " + number() + " pounds and looked like I\'d swallowed \n" \
+    "a " + noun() + ". I felt like it, too!  Bruce was " + adj() + ", but I think \n" \
+    "he\'d had enough of me having to " + verb() + " all the time and get \n"  \
+    "all " + adj() + " over " + adj() + " " + plnoun() + ".  One minute I\'d be " + adj() + " and the next \n"  \
+    "I\'d be " + verbing() + " like a " + noun() + ". Bruce and I spent the day at the \n"  \
+    + noun() + " museum in " + place().capitalize() + " and came home to relax - but then my water \n"  \
+    "broke! Bruce grabbed our to-go " + noun() + " and off we went to " + noun().capitalize() + " " + noun().capitalize() + " \n"  \
+    "Hospital. I was in labor for " + number() + " hours before the " + plnoun() + " brought \n"  \
+    "in Dr. " + name() + ". I " + verbed() + " like there was no " + noun() + " but the baby wouldn\'t \n"  \
+    + verb() + ".  There was obviously a "+ noun() + " and they said Patrick would have to be \n"  \
+    + verbed() + " by " + adj() + "-section. And so he was. Bruce declined the chance to \n"  \
+    + verb() + " the " + noun() + ", but was happy to hold Patrick as soon as he\'d been " + verbed() + ". \n"  \
+    "Of course, everyone was " + adj() + " when they saw our " + adj() + ", " + adj() + ", " + noun() + " of \n"  \
+    + "joy. " + adverb().capitalize() + ", we were able to bring him home, strapped in his " + noun() + " in the \n"  \
+    "back of our " + noun() + ". Over " + number() + " diapers and " + number() + " of years of school later \n"  \
+    "he's still " + adj() + " and we love him " + adverb() + "!\n")
+
+
+print ("\n\'It Could Have Happened That Way - Birth\'\n")
+
+print (story)
