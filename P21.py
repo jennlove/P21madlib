@@ -37,7 +37,7 @@ story =("March 7, in the year " + number() + ": It was still " + number() + " da
     "all " + adj() + " over " + adj() + " " + plnoun() + ".  One minute I\'d be " + adj() + " and the next \n"  \
     "I\'d be " + verbing() + " like a " + noun() + ". Bruce and I spent the day at the \n"  \
     + noun() + " museum in " + place().capitalize() + " and came home to relax - but then my water \n"  \
-    "broke! Bruce grabbed our to-go " + noun() + " and off we went to " + noun().capitalize() + " " + noun().capitalize() + " \n"  \
+    "broke! Bruce grabbed our to-go " + noun() + " and off we went to " + verb() + " " + noun().capitalize() + " \n"  \
     "Hospital. I was in labor for " + number() + " hours before the " + plnoun() + " brought \n"  \
     "in Dr. " + name() + ". I " + verbed() + " like there was no " + noun() + " but the baby wouldn\'t \n"  \
     + verb() + ".  There was obviously a "+ noun() + " and they said Patrick would have to be \n"  \
