@@ -44,7 +44,7 @@ story =("March 7, in the year " + number() + ": It was still " + number() + " da
     + verbed() + " by " + adj() + "-section. And so he was. Bruce declined the chance to \n"  \
     + verb() + " the " + noun() + ", but was happy to hold Patrick as soon as he\'d been " + verbed() + ". \n"  \
     "Of course, everyone was " + adj() + " when they saw our " + adj() + ", " + adj() + ", " + noun() + " of \n"  \
-    + "joy. " + adverb().capitalize() + ", we were able to bring him home, strapped in his " + noun() + " in the \n"  \
+    "joy. " + adverb().capitalize() + ", we were able to bring him home, strapped in his " + noun() + " in the \n"  \
     "back of our " + noun() + ". Over " + number() + " diapers and " + number() + " of years of school later \n"  \
     "he's still " + adj() + " and we love him " + adverb() + "!\n")
 
